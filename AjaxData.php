@@ -130,8 +130,6 @@ class AjaxData extends Component
             }
         }
 
-        //Yii::$app->test->show($this->query->createCommand()->sql);
-
         $this->filteredCount = $query->count();
 
         if($this->with !== null)
@@ -145,8 +143,6 @@ class AjaxData extends Component
 
         if($this->start !== null)
             $this->query->offset($this->start);
-
-        //Yii::$app->test->show([$this->query->createCommand()->sql, $this->query->createCommand()->params]);
 
         return $this;
     }
